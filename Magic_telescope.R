@@ -50,7 +50,7 @@ head(df)
 #create_report(df)
 
 #---------------------------------------------------------------------
-#parte non supervisionata (rete neurale)
+#rete neurale
 
 # Build your own `normalize()` function
 normalize <- function(x) {
@@ -186,7 +186,7 @@ CM = matrix( c(vv,fv,nv,ff),  nrow=2, ncol=2)
 CM
 
 #---------------------------------------------------------------------
-#parte supervisionata
+#random forest
 
 #riduzione dataset per elementi che ci interessano (zone 3d, indice, invece che ratio highest tengo ratio sum 2 highest)
 df2 <- data.frame(df2, stringsAsFactors = FALSE)
